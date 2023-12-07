@@ -37,7 +37,7 @@ if navigation_menu == "Exploratory Data Analysis":
     axi = ax.ravel()
     for i, c in enumerate(label_feature):
         uni = len(data[c].unique())
-        axi[i].hist(data[c].tolist(), bins=uni, edgecolor='black')
+        axi[i].hist(data[c].tolist(), bins=np.abs(uni), edgecolor='black')
         axi[i].set_title(c)
         axi[i].set_ylabel('Freq')
         if uni < 10:
