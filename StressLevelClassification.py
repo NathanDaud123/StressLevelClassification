@@ -89,11 +89,6 @@ elif navigation_menu == "Prediction":
 
     # Streamlit app
     st.title("Stress Level Prediction")
-
-    # Add a section to display dataset and user input
-    st.header("Dataset Overview:")
-    st.write(data.head())
-
     st.header("Input Your Characteristic")
     # Collect user input
     user_input_dict = {}
